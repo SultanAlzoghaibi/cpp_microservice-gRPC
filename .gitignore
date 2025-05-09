@@ -1,0 +1,24 @@
+# Ignore CLion project settings
+.idea/
+
+# Ignore build output directories
+cmake-build-*/
+
+# Ignore CMake cache and build files
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+compile_commands.json
+
+# Ignore executables and object files
+*.o
+*.obj
+*.so
+*.a
+*.exe
+*.out
+
+# OS-specific
+.DS_Store
+Thumbs.db
