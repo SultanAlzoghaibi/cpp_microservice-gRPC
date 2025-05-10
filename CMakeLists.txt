@@ -5,3 +5,4 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_executable(cpp_microservice_gRPC main.cpp
         learnCpp/cpptest1.cpp)
+git reset
