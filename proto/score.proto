@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package score;
+
+option java_package = "com.teamhealth.grpc";
+option java_outer_classname = "ScoreProto";
+
+message CalculateScoreRequest {
+  string team_id = 1;
+  map<string, int32> scores = 2;
+}
+
+message CalculateScoreResponse {
+  int32 final_score = 1;
+}
+
+service ScoreService {
+  rpc CalculateScore (CalculateScoreRequest) returns (CalculateScoreResponse);
+}
