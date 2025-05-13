@@ -1,6 +1,18 @@
 # Ignore CLion project settings
 .idea/
 
+
+# Ignore build artifacts and vcpkg
+/build/
+/vcpkg/
+/CMakeFiles/
+/CMakeCache.txt
+*.a
+*.so
+*.dylib
+*.pb.cc
+*.pb.h
+
 # Ignore build output directories
 cmake-build-*/
 
